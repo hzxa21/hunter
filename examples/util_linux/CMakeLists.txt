@@ -2,12 +2,17 @@
 # All rights reserved.
 
 cmake_minimum_required(VERSION 3.0)
+set(CMAKE_CXX_STANDARD 17)
 
 # Emulate HunterGate:
 # * https://github.com/hunter-packages/gate
+set(TESTING_CONFIG_OPT "PRIVATE_PACKAGES;${CMAKE_SOURCE_DIR}/cmake/packages")
 include("../common.cmake")
 
 project(download-util_linux)
+
+hunter_add_package(Outcome)
+find_package(Outcome REQUIRED CONFIG)
 
 hunter_add_package(util_linux)
 
@@ -26,4 +31,5 @@ target_link_libraries(
     PkgConfig::mount
     PkgConfig::smartcols
     PkgConfig::uuid
+    Outcome:outcome
 )

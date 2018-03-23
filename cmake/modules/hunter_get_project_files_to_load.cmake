@@ -60,10 +60,19 @@ function(hunter_get_project_files_to_load)
     return()
   endif()
 
+  # First attempt to include any private packages if they exist, and support for private
+  # packages has been enabled via HunterGate using the PRIVATE_PACKAGES option. Otherwise
+  # fall back to the global project directory.
   set(
       project_dir
-      "${HUNTER_SELF}/cmake/projects/${x_PROJECT_NAME}"
+      "${HUNTER_GATE_PRIVATE_PACKAGES}/${x_PROJECT_NAME}"
   )
+  if (NOT EXISTS "${project_dir}" OR "${HUNTER_GATE_PRIVATE_PACKAGES}" STREQUAL "" OR NOT IS_DIRECTORY "${project_dir}")
+      set(
+          project_dir
+          "${HUNTER_SELF}/cmake/projects/${x_PROJECT_NAME}"
+      )
+  endif()
   if(NOT EXISTS "${project_dir}")
     hunter_internal_error("Project '${x_PROJECT_NAME}' not found")
   endif()
