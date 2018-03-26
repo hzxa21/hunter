@@ -10,6 +10,9 @@ include(hunter_internal_error)
 include(hunter_status_debug)
 include(hunter_test_string_not_empty)
 
+# FIXME: Temporary hack. Should plum this property in from HunterGate.
+set(HUNTER_ALLOW_CONFIG_LOADING TRUE)
+
 # internal variables: _hunter_ap_*
 macro(hunter_add_package)
   string(COMPARE EQUAL "${PROJECT_NAME}" "" _project_name_is_empty)
