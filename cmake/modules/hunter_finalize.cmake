@@ -46,13 +46,11 @@ macro(hunter_finalize)
     set(_cxx_enabled TRUE)
   endif()
 
-  # FIXME: This doesn't quite work for some reason. Need to investigate,
-  # but I'm just disabling this check for now since it's wrong.
-  #if(_c_enabled AND NOT CMAKE_C_ABI_COMPILED)
-  #  hunter_fatal_error(
-  #      "ABI not detected for C compiler" WIKI "error.abi.detection.failure"
-  #  )
-  #endif()
+  if(_c_enabled AND NOT CMAKE_C_ABI_COMPILED)
+    hunter_fatal_error(
+        "ABI not detected for C compiler" WIKI "error.abi.detection.failure"
+    )
+  endif()
 
   if(_cxx_enabled AND NOT CMAKE_CXX_ABI_COMPILED)
     hunter_fatal_error(
