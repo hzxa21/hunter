@@ -78,6 +78,13 @@ hunter_add_version(
     URL "https://github.com/hunter-packages/protobuf/archive/v3.5.2-p0.tar.gz"
     SHA1 "0c1eacb460266dea7cd18c2009642fa192c15b70")
 
+hunter_add_version(
+    PACKAGE_NAME Protobuf
+    VERSION "3.5.2-p1"
+    URL "https://github.com/ambroff/protobuf/archive/hunter-3.5.2_p1_ambroff.zip"
+    SHA1 "7945395b3844bb9edba93b9425a669a7b5312639"
+    )
+
 if(ANDROID OR IOS)
   hunter_cmake_args(
       Protobuf
