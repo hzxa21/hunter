@@ -10,6 +10,6 @@ hunter_add_version(
   SHA1 5c2c74b8bf773df6e813f0709f55d40a8256104d
 )
 
+hunter_configuration_types(jemalloc Release)
 hunter_pick_scheme(DEFAULT url_sha1_autotools)
 hunter_download(PACKAGE_NAME jemalloc)
-hunter_configuration_types(jemalloc Release)
