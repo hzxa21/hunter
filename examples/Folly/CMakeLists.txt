@@ -21,11 +21,15 @@ find_package(glog CONFIG REQUIRED)
 hunter_add_package(Folly)
 find_package(Folly CONFIG REQUIRED)
 
+hunter_add_package(double-conversion)
+find_package(double-conversion CONFIG REQUIRED)
+
 add_executable(folly-test test.cpp)
 target_link_libraries(folly-test PUBLIC
   ZLIB::zlib
   glog::glog
   gflags
   Folly::folly
+  double-conversion::double-conversion
   )
 # DOCUMENTATION_END }

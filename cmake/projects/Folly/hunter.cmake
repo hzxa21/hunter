@@ -7,8 +7,8 @@ include(hunter_cmake_args)
 hunter_add_version(
   PACKAGE_NAME Folly
   VERSION "2018.04.09.00"
-  URL "https://github.com/ambroff/folly/archive/72d423d92f2c5dab67165abd5880c563bcee4d26.zip"
-  SHA1 37ad481a9dd8bf0593f1ca6bf7588b8bc098a316
+  URL "https://github.com/ambroff/folly/archive/4d00384173da50fcc56603be107c76566ba42069.zip"
+  SHA1 7f4eb81bb284788a861b0f834a022b74a25f42f1
 )
 
 if (APPLE)
