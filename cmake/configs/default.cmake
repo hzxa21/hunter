@@ -404,3 +404,5 @@ hunter_config(cpp_redis VERSION 3.5.0-h1)
 hunter_config(IF97 VERSION 2.1.2)
 
 hunter_config(Outcome VERSION 2.0)
+hunter_config(jemalloc VERSION 5.0.1)
+hunter_config(Folly VERSION 2018.04.09.00)
