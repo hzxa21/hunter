@@ -8,6 +8,15 @@ set(CMAKE_CXX_STANDARD 17)
 
 project(folly-test)
 
+if (APPLE)
+  # Clang 6 mistakenly doesn't signal that it supports C++17 std::launder, which leads to a compile error in
+  # folly/Launder.h since that has a fallback implementation.
+  # See http://en.cppreference.com/w/User:D41D8CD98F/feature_testing_macros
+  add_definitions(
+    -D__cpp_lib_launder=201606
+    )
+endif(APPLE)
+
 # DOCUMENTATION_START {
 hunter_add_package(ZLIB)
 find_package(ZLIB CONFIG REQUIRED)
