@@ -21,6 +21,13 @@ hunter_add_version(
   SHA1 a276c320a30468a0e0b7f9f94f7a92c79fb98809
 )
 
+hunter_add_version(
+  PACKAGE_NAME async_grpc
+  VERSION "2018.5.2.5"
+  URL "https://github.com/ambroff/async_grpc/archive/51c496e106a9e2bcb774604285ca2ae46fd82295.zip"
+  SHA1 5df0fe96eb25425b46b7545aba3964e6577b2613
+)
+
 hunter_pick_scheme(DEFAULT url_sha1_cmake)
 hunter_cacheable(async_grpc)
 hunter_download(PACKAGE_NAME async_grpc)
