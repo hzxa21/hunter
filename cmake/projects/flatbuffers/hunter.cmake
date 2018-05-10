@@ -34,7 +34,7 @@ hunter_add_version(
 hunter_cmake_args(
     flatbuffers
     CMAKE_ARGS
-        FLATBUFFERS_BUILD_FLATC=OFF
+        FLATBUFFERS_BUILD_FLATC=ON
         FLATBUFFERS_BUILD_FLATHASH=OFF
         FLATBUFFERS_BUILD_TESTS=OFF
 )
