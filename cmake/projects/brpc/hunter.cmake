@@ -13,10 +13,17 @@ hunter_add_version(
   SHA1 09582111614ccae3cdbea61ea4eaebc7a665e7df
   )
 
+hunter_add_version(
+  PACKAGE_NAME brpc
+  VERSION 0.9.0.1
+  URL  "https://github.com/lindong28/brpc/archive/303a28ade418a56639aebfd13211ed7493c8e34e.zip"
+  SHA1 5212ec91954df652123c56243fa5708fddf90d76
+  )
+
 hunter_cmake_args(
   brpc
   CMAKE_ARGS
-    BRPC_WITH_GLOG=OFF
+    BRPC_WITH_GLOG=ON
     WITH_DEBUG_SYMBOLS=ON
     BRPC_BUILD_SHARED=OFF
     BRPC_BUILD_GEN_MCPACK=OFF
