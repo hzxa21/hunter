@@ -20,6 +20,13 @@ hunter_add_version(
   SHA1 40fff011e48364b94533aca9257ea8db33ef02db
   )
 
+hunter_add_version(
+  PACKAGE_NAME braft
+  VERSION 2018.5.24.1
+  URL "https://github.com/ambroff/braft/archive/851d1fa05134a11696e9a590cbb8cff4cafff840.zip"
+  SHA1 9d8d61d52e77e7c0fb336ab5610f2a3e12b611a6
+  )
+
 hunter_cmake_args(
   braft
   CMAKE_ARGS
