@@ -20,6 +20,13 @@ hunter_add_version(
   SHA1 5212ec91954df652123c56243fa5708fddf90d76
   )
 
+hunter_add_version(
+        PACKAGE_NAME brpc
+        VERSION 0.9.0.2
+        URL  "https://github.com/hzxa21/brpc/archive/hunter-v0.9.0.zip"
+        SHA1 7d95be427e0933c821236e8b4d30a8ec414b220e
+)
+
 hunter_cmake_args(
   brpc
   CMAKE_ARGS
