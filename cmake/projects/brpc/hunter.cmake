@@ -24,7 +24,7 @@ hunter_add_version(
         PACKAGE_NAME brpc
         VERSION 0.9.0.2
         URL  "https://github.com/hzxa21/brpc/archive/zahuang-hunter-v0.9.0.zip"
-        SHA1 230b13c37dcd2cfb8869221a6cb5e9ba050cbe20
+        SHA1 23bb82ede61fb2e2658a77226d2da32d79714885
 )
 
 hunter_cmake_args(
