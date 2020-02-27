@@ -30,8 +30,8 @@ hunter_add_version(
 hunter_add_version(
   PACKAGE_NAME brpc
   VERSION 2020.02.26.1
-  URL "https://github.com/hzxa21/brpc/archive/hunter_2020.02.26.zip"
-  SHA1 55c280d9e77fb692d5a805265290c8cbfc5e8820
+  URL "https://github.com/hzxa21/brpc/archive/ed74213427e17b014dad6b685d7fa8957143d973.zip"
+  SHA1 c7809e85f6a30eb9795f9b2c62573eb60574074f
 )
 
 hunter_cmake_args(
