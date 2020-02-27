@@ -34,6 +34,13 @@ hunter_add_version(
   SHA1 19cf561a2ce4913ccf474b65bf68b34e53dbeb53
   )
 
+hunter_add_version(
+  PACKAGE_NAME braft
+  VERSION 2020.02.26.1
+  URL "https://github.com/baidu/braft/archive/v1.0.1.zip"
+  SHA1 18362d3c41b615a834c07ddcd41404873f17913f
+)
+
 hunter_cmake_args(
   braft
   CMAKE_ARGS
