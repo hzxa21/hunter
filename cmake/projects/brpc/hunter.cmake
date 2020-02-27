@@ -30,8 +30,8 @@ hunter_add_version(
 hunter_add_version(
   PACKAGE_NAME brpc
   VERSION 2020.02.26.1
-  URL "https://github.com/apache/incubator-brpc/archive/f8c188a7a5186c2d43a20735ad175a32b39788a3.zip"
-  SHA1 e3f8fc587943dc801ea6190ef58b7015a48968c5
+  URL "https://github.com/hzxa21/brpc/archive/hunter_2020.02.26.zip"
+  SHA1 55c280d9e77fb692d5a805265290c8cbfc5e8820
 )
 
 hunter_cmake_args(
